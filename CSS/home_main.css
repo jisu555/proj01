@@ -1,0 +1,40 @@
+main .home_main_menu {
+    /* border: 1px solid red; */
+    width: 1000px;
+    overflow: hidden;
+    margin: 50px auto;
+    font-weight: bold;
+    font-family: 'Georgia';
+}
+
+main .home_main_menu > li {
+    width: 20%;
+    float: left;
+    text-align: center;
+    line-height: 50px;
+}
+main .home_main_menu a {
+    color: #572c10;
+    text-decoration: none;
+    font-size: 22px;
+}
+
+main .main_submenu > li {
+    line-height: 25px;
+}
+
+/* submenu는 기본 출력 시 보이지 않게 처리 */
+main .main_submenu {
+    height: 0;
+    overflow: hidden;
+}
+
+/* 마우스 올렸을 때 보이기 처리 */
+main .home_main_menu > li:hover {
+    transition-duration: 0.5;
+    text-decoration: none;
+}
+main .home_main_menu >li:hover .main_submenu {
+    height: 150px;
+    transition-duration: 1s;
+}

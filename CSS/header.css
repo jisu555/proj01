@@ -1,0 +1,95 @@
+header {
+    height: 150px;
+    text-align: center;
+}
+
+/*logo 부분*/
+header #logo_box{
+    margin-top: 50px;
+}
+header #logo_box img {
+    width: 190px;
+}
+
+/*clock 부분*/
+header #date {
+    font-size: 13px;
+}
+
+
+/*current_page 부분*/
+header #current_page{
+    font-size: 13px;
+}
+header #current_page a:link {
+    text-decoration: none;
+}
+
+
+/* top_menu 부분 */
+header #top_menu {
+    position: absolute;
+    top: 15px;
+    right: 30px;
+    font-size: 13px;
+}
+header #top_menu li {
+    display: inline;
+    margin: 0px 5px 0px 5px; 
+}
+header #top_menu a:link {
+    text-decoration: none;
+    color: black;
+}
+header #top_menu a:link:hover {
+    text-decoration: underline;
+}
+
+
+/*search 모달창 부분*/
+#btn-modal {
+    border: 0px;
+    background-color: white;
+    cursor: pointer;
+}
+#btn-modal:hover {text-decoration: underline;}
+
+#modal.modal-overlay {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0; left: 0;
+    display: none;
+    background-color: rgba(255, 255, 255, 0.3);
+    z-index: 10;
+}
+
+#modal .modal-window {
+    background: rgba( 255, 255, 255, 0.7 );
+        width: 100%;
+        height: 100%;
+        position: relative;
+}
+
+#modal .close-area {
+    float: right;
+    margin: 50px 50px 0px 0px;
+    cursor: pointer;
+    color: #572c10;
+}
+
+#modal .content {
+    margin-top: 380px;
+    color: #572c10;
+}
+#modal .content input {
+    width: 500px; height: 30px;
+    border: 1px solid #572c10;
+    background: none;
+    text-align: center;
+    font-size: 18px;
+}
+#modal .content .enter {
+    font-size: 14px;
+    margin: 10px;
+}

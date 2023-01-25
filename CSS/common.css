@@ -1,0 +1,24 @@
+* {margin: 0; padding: 0;}
+
+body {
+    font-family: "맑은 고딕";
+}
+
+ul{list-style-type: none;}
+ol{list-style-type: none;}
+
+.clear {clear: both;}
+
+#wrap {
+    width: 1322px;
+    margin: 0 auto;
+}
+
+#chat {
+    position: fixed;
+    right: -70px;
+    bottom: -60px;
+}
+#chat img {
+    width: 250px;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>winter22_main</title>
+    <link rel = "stylesheet" type="text/css" href="CSS/common.css">
+    <link rel = "stylesheet" type="text/css" href="CSS/slide.css">
+    <link rel = "stylesheet" type="text/css" href="CSS/video.css">
+</head>
+<body>
+    <div class="slide_wrapper">
+        <ul class="slides">
+            <li><img src= "img/lookbook_main/22winter/22winter01.jpg"></li>
+            <li><img src= "img/lookbook_main/22winter/22winter02.jpg"></li>
+            <li><img src= "img/lookbook_main/22winter/22winter03.jpg"></li>
+            <li><img src= "img/lookbook_main/22winter/22winter04.jpg"></li>
+            <li><img src= "img/lookbook_main/22winter/22winter05.jpg"></li>
+            <li><img src= "img/lookbook_main/22winter/22winter06.jpg"></li>
+            <li><img src= "img/lookbook_main/22winter/22winter07.jpg"></li>
+            <li><img src= "img/lookbook_main/22winter/22winter08.jpg"></li>
+            <li><img src= "img/lookbook_main/22winter/22winter09.jpg"></li>
+        </ul>
+    </div>
+    <p class="controls">
+        <span class="prev"><</span>
+        <span class="next">></span>
+    </p>
+
+    <!-- 비디오 -->
+    <div class="popupVideo">
+        <a data-video="ZL64FunHRK8">Video</a>
+    </div>
+    <div class="video-popup">
+        <div class="video-popup-closer"></div>
+    </div>
+
+    <div id="chat"><img src="img/chat.png"></div>
+
+    <script src="JS/slide.js"></script>
+    
+    <script src="JS/jquery-3.6.3.min.js"></script>
+      <script>
+        $(".popupVideo a").click(function() {
+        $(".video-popup").addClass("reveal"),
+        $(".video-popup .video-wrapper").remove(),
+        $(".video-popup").append("<div class='video-wrapper'><iframe width='560' height='315' src='https://youtube.com/embed/" + $(this).data("video") + "?rel=0&playsinline=1&autoplay=1' allow='autoplay; encrypted-media' allowfullscreen></iframe></div>")
+        }),
+        $(".video-popup-closer").click(function() {
+        $(".video-popup .video-wrapper").remove(),
+        $(".video-popup").removeClass("reveal")
+        });
+      </script>
+
+
+</body>
+</html>

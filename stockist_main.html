@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>stockist_main</title>
+    <link rel = "stylesheet" type="text/css" href="CSS/common.css">
+    <link rel = "stylesheet" type="text/css" href="CSS/stockist.css">
+</head>
+<body>
+    <div id="stockist_box">
+        <div id="online">
+            <h3 class="st_title">Online</h3>
+            <ul>
+                <li><a href="https://www.musinsa.com/" target="_blank">무신사</a></li>
+                <li><a href="#">하이츠스토어</a></li>
+                <li><a href="#">29CM</a></li>
+                <li><a href="#">W컨셉</a></li>
+                <li><a href="#">HAGO</a></li>
+            </ul>
+        </div>
+
+        <div id="offline">
+            <h3 class="st_title">Offline</h3>
+            <ul class="off_list">
+                <li class="item">
+                    <a href="#"><img src = "img/stockist/seoul.jpg" data-src="img/stockist/location.jpg" class="pic"></a>
+                    <div class="info">
+                    <h3>Seoul</h3>
+                        <p>Open 11-7 (MON-SAT)</p>
+                        <p>12-6 (SUN)</p>
+                     </div></a>
+                </li>
+                <li class="item">
+                    <a href="#"><img src = "img/stockist/busan.jpg"></a>
+                    <div class="info">
+                    <h3>Busan</h3>
+                        <p>Open 11-7 (MON-SAT)</p>
+                        <p>12-6 (SUN)</p>
+                     </div></a>
+                </li>
+                <div class="clear"></div>
+                <li class="item">
+                    <a href="#"><img src = "img/stockist/incheon.jpg"></a>
+                    <div class="info">
+                    <h3>Incheon</h3>
+                        <p>Open 11-7 (MON-SAT)</p>
+                        <p>12-6 (SUN)</p>
+                     </div></a>
+                </li>
+                <li class="item">
+                    <a href="#"><img src = "img/stockist/jeju.jpg"></a>
+                    <div class="info">
+                    <h3>Jeju</h3>
+                        <p>Open 11-7 (MON-SAT)</p>
+                        <p>12-6 (SUN)</p>
+                     </div></a>
+                </li>
+            </ul>
+        </div>
+        <div id = "lightbox">
+            <img src="img/stockist/location.jpg" alt="" id="lightboxImage">
+        </div>
+    </div>
+
+    <div id="chat"><img src="img/chat.png"></div>
+
+    <script src="JS/modal.js"></script>
+    <script>
+        var pics = document.getElementsByClassName("pic");
+        var lightbox = document.getElementById("lightbox");
+        var lightboxImage = document.getElementById("lightboxImage");
+
+        //for 루프를 돌리면서 썸네일을 클릭 시 showLightbox() 함수를 호출
+        for (var i = 0; i<pics.length; i++){
+            pics[i].addEventListener("click", showLightbox);
+                //pics배열의 i번째 요소를 클릭 시 showLightbox() 함수를 호출
+        }
+
+
+        //썸네일을 클릭 시 img 태그의 원본 이미지를 적용하는 함수
+        function showLightbox() {
+            var bigLocation = this.getAttribute("data-src");    //data-src의 값을 가져와서 bigLocation 변수에 할당
+            lightboxImage.setAttribute("src", bigLocation);
+            lightbox.style.display = "block";      /*화면에 출력되도록 설정 : none => block */
+        }
+
+        //출력된 화면을 클릭 시 다시 원래대로 되돌리는 함수 
+        lightbox.onclick = function() {
+            lightbox.style.display="none";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+#login_form {
+    width: 500px;
+    height: 600px;
+    text-align: center;
+    padding-top: 100px;
+}
+
+#login_form input {
+    width: 400px;
+    border: 0px;
+    border-bottom: 1px solid #572c10;
+    margin-bottom: 20px;
+}
+#login_form input:focus {outline: none;}
+
+#btn_login, #btn_register {
+    width: 400px;
+    border: 1px solid #572c10;
+    padding: 10px 0px;
+    cursor: pointer;
+    margin: 10px 0px;
+}
+#btn_login {
+    background-color: #572c10;
+    color: #fff;
+}
+#btn_register {
+    background-color: #fff;
+    color: #572c10;
+}
+#btn_login:hover {
+    background-color: #fff;
+    color: #572c10;
+}
+
+#login_form p {
+    font-family: '맑은 고딕';
+    font-size: 12px;
+    margin: 8px 0px;
+}
+#login_form p a {
+    color: #572c10;
+    text-decoration: none;
+}
+#login_form .find {
+    margin-top: 30px;
+    text-align: left;
+    padding-left: 50px;
+}
+

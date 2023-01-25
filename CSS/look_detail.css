@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .swiper-container {
+    border: 1px solid red;
+    position: absolute;
+    left: 10%;
+    top: 200px;
+    width: 1300px;
+    height: 700px;
+    overflow: hidden;
+  }
+  
+  .swiper-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 5px;
+    pointer-events: none;
+  }
+  

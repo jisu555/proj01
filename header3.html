@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>header</title>
+    <link rel = "stylesheet" type="text/css" href="CSS/common.css">
+    <link rel = "stylesheet" type="text/css" href="CSS/header.css">
+
+</head>
+<body>
+        <header>
+            <div id="logo_box">
+                <a href ="index.html"><img id="logo" src="img/logo.png"></a>
+                <div id="current_page">
+                    <a href="index.html">home</a>
+                    <span id="c_page"> > <a href="category.html">shop</a></span>
+                    <span id="c_page"> > <a href="#">cardigan</a></span>
+                </div>
+            </div>
+            
+            <nav id="top_menu">
+                <ul>
+                    <li><button id="btn-modal">Search</button></li>
+                    <li><a href="#">Cart</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="#">My Account</a></li>
+                </ul>
+            </nav>
+
+            <div id="modal" class="modal-overlay">
+                <div class="modal-window">
+                    <div class="close-area">X</div>
+                    <div class="content">
+                        <input id="keyword">
+                        <div class="enter">검색어를 입력하시고 엔터를 누르세요</div>
+                        <div class="enter">Press Enter to Search</div>
+                    </div>
+                </div>
+            </div>
+              
+        </header>
+
+         <script src="JS/modal.js"></script>
+
+
+</body>
+</html>

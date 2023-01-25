@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css?family=Abril+Fatface");
+nav {
+  overflow: hidden;
+}
+
+ol:first-child {
+    display: flex;
+    align-items: flex-end;
+    height: 550px;
+    /* border: 2px solid red;  */
+}
+
+ol:first-child > .menu-item {
+    /* border: 2px solid red; */
+    width: 220px;
+    flex: 0 1 auto; /*flex 속성의 기본값은 flex: 0 1 auto다. 기본값을 적용하면 flex container의 크기가 flex item 전체의 크기보다 작아질 때 flex item의 크기가 작아진다.*/
+    height: 100%;
+    -webkit-writing-mode: vertical-lr;
+        -ms-writing-mode: vertical-lr;
+            writing-mode: vertical-lr;  /*글자 좌우 배치*/
+    -webkit-transform: rotate(0deg); /*이미지 회전*/
+            transform: rotate(0deg);
+    line-height: 0.9; /*w*/  /*글자 벽면으로부터 위치*/
+    cursor: pointer;
+    transition: width 0.4s ease-out; /*w*/
+    position: relative;
+}
+ol:first-child > .menu-item:focus {
+    width: 520px; /*w*/  /*이미지 확장되는 사이즈*/
+    -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: vertical-rl;
+          writing-mode: vertical-rl;
+    box-sizing: border-box;
+    padding-right: 30px; /*w*/ /*확장되었을 때 테두리랑 메인텍스트박스 사이 간격*/
+}
+ol:first-child > .menu-item:hover a, ol:first-child > .menu-item:focus a {  /*글자 뒤 베이지 색 박스*/
+    padding: 25px 0px; /*상하  좌우*/
+    background: wheat;
+    margin-top: 30px; /*메인메뉴 박스 테두리면에서 띄어지는 너비*/
+}
+ol:first-child > .menu-item:nth-child(3) a {    
+    color: white !important;  /*widgets글씨 화이트*/
+  }
+  ol:first-child > .menu-item:nth-child(3):hover, ol:first-child > .menu-item:nth-child(3):focus {
+    background-image: url(../img/new.jpg) !important;
+  }
+
+
+
+  /*outer 부분*/
+  ol:first-child > .menu-item:nth-child(1) {
+    background-image: url(../img/outer.jpg) !important;
+  }
+  ol:first-child > .menu-item:nth-child(1) a {
+    color: #ee8a3d;
+  }
+  ol:first-child > .menu-item:nth-child(1):hover a, ol:first-child > .menu-item:nth-child(1):focus a {
+    color: #572c10 !important;
+  }
+  ol:first-child > .menu-item:nth-child(5) {
+    z-index: 0;
+  }
+
+  /*top 부분*/    
+  ol:first-child > .menu-item:nth-child(2) {
+    background-image: url(../img/top.jpg) !important;
+  }
+  ol:first-child > .menu-item:nth-child(2) a {
+    color: #ea5c58;
+  }
+  ol:first-child > .menu-item:nth-child(2):hover a, ol:first-child > .menu-item:nth-child(2):focus a {
+    color: #572c10 !important;
+  }
+  ol:first-child > .menu-item:nth-child(4) {
+    z-index: 1;
+  }
+
+  /*new 부분*/
+  ol:first-child > .menu-item:nth-child(3) {
+    background-color: #6d7dd8;
+    /* background-image: url(../acc.jpg) !important; */
+  }
+  ol:first-child > .menu-item:nth-child(3):hover a, ol:first-child > .menu-item:nth-child(3):focus a {
+    color: #572c10 !important;
+  }
+  ol:first-child > .menu-item:nth-child(3) {
+    z-index: 2;
+  }
+
+  /*bottom 부분*/
+  ol:first-child > .menu-item:nth-child(4) {
+    background-image: url(../img/bottom.jpg) !important;
+  }
+  ol:first-child > .menu-item:nth-child(4) a {
+    color: #6dd2c1;
+  }
+  ol:first-child > .menu-item:nth-child(4):hover a, ol:first-child > .menu-item:nth-child(4):focus a {
+    color: #572c10 !important;
+  }       
+  ol:first-child > .menu-item:nth-child(2) {
+    z-index: 3;
+  }
+
+  /*accessory 부분*/
+  ol:first-child > .menu-item:nth-child(5) {
+    background-image: url(../img/acc.jpg) !important;
+  }
+  ol:first-child > .menu-item:nth-child(5) a {
+    color: #8a6af0;
+  }
+  ol:first-child > .menu-item:nth-child(5):hover a, ol:first-child > .menu-item:nth-child(5):focus a {
+    color: #572c10 !important;
+  }
+  ol:first-child > .menu-item:nth-child(1) {
+    z-index: 4;
+  }
+
+
+  /*main-menu부분*/
+  ol:first-child > .menu-item > a {
+    font-size: 9vmin;
+    text-decoration: none;
+    font-family: "Abril Fatface", cursive;
+    transition: 0.2s ease-out;
+    pointer-events: none;
+  }
+  
+  ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    /* border: 3px solid red; */
+  }
+  ol * {
+    outline: 0;
+    
+  }
+
+  
+  .sub-menu {
+    margin-top: 50px;
+    position: absolute;
+    left: 20px;
+    bottom: 0;
+    -webkit-transform: rotate(-90deg); /*서브 텍스트 방향*/
+            transform: rotate(-90deg);
+    text-align: left;
+    overflow: hidden;
+  }
+  .sub-menu:after {  /* + 부분*/
+    /* content: "+"; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 9vmin;
+    color: white;
+    -webkit-transform: translate(-50%, 50%);
+            transform: translate(-50%, 50%);
+  }
+  .menu-item:hover .sub-menu:after {
+    color: wheat;
+  }
+  .menu-item:focus .sub-menu:after {
+    display: none;
+  }
+  .sub-menu .menu-item {
+    -webkit-transform: translateY(100%); /*translateY(거리) 함수는 상하(수직 방향)의 이동 거리 값*/
+            transform: translateY(100%);
+  }
+  .sub-menu .menu-item:hover a {
+    text-decoration: none;
+  }
+  .menu-item:focus .sub-menu .menu-item {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+    transition: -webkit-transform 0.3s ease-out;
+    transition: transform 0.3s ease-out;
+    transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
+  }
+  .menu-item:focus .sub-menu .menu-item:nth-child(1) {
+    transition-delay: 0.15s;
+  }
+  .menu-item:focus .sub-menu .menu-item:nth-child(2) {
+    transition-delay: 0.3s;
+  }
+  .menu-item:focus .sub-menu .menu-item:nth-child(3) {
+    transition-delay: 0.45s;
+  }
+  .menu-item:focus .sub-menu .menu-item:nth-child(4) {
+    transition-delay: 0.6s;
+  }
+  .sub-menu .menu-item a {
+    line-height: 1.5;
+    font-size: 4vmin;
+    pointer-events: default;
+  }

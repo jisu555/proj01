@@ -1,0 +1,83 @@
+/*total sort 부분*/
+.total {
+    border-bottom: 1px solid #572c10;
+    width: 1160px;
+    margin-bottom: 5px;
+    padding-bottom: 10px;
+    font-size: 12px;
+}
+.total p {
+    display: inline-block;
+}
+.total #function {
+    float: right;
+    padding-right: 10px;
+}
+.total #type {
+    margin-left: 10px;
+}
+
+
+
+
+/*스크롤 고정하기*/
+.products_list_items {
+    /* border: 1px solid blue; */
+    width: 1200px;
+    height: 600px; overflow-y: auto;
+}
+.sc-blind {
+    width: 1180px;
+    overflow: hidden;
+}
+
+/*제품 정렬*/
+.item {
+    /* border: 1px solid red; */
+    width: 280px;
+    height: 280px;
+    float: left;
+    margin: 5px;
+}
+
+.products_list_items li {
+    text-align: center;
+    /* overflow: hidden; */
+}
+.products_list_items img {
+    width: 280px;
+    
+}
+
+/*마우스 호버시 정보*/
+.products_list_items .item{
+    position: relative;
+}
+.products_list_items .info{
+    position: absolute; left: 0; bottom: 0;
+    background: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+}
+.products_list_items .item:hover .info{
+    opacity: 1;
+    color: aliceblue;
+}
+
+.products_list_items .info h3{
+    font-size: 13px;
+    padding-bottom: 0.5em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-transform: uppercase;
+}
+.products_list_items .info p {
+    font-size: 11px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    /* text-transform: uppercase; */
+  }

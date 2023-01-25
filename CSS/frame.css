@@ -1,0 +1,23 @@
+.wrap{
+    display: grid;
+    grid-template-columns: 10% 1fr;
+    grid-template-rows: 160px 1fr 80px;
+    height: 100%;
+    grid-template-areas: 
+        "header header"
+        "main main"
+        "footer footer";
+}
+.header {
+    grid-area: header;
+}
+.aside {
+    grid-area: aside;
+}
+.main {
+    grid-area: main;
+    margin: 0 auto;
+}
+.footer {
+    grid-area: footer;
+}

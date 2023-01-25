@@ -1,0 +1,204 @@
+#detail_wrap {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+#small-pic {
+    /* float: left; */
+    width:150px; height: 600px;
+    overflow-y: auto;
+}
+
+#scrollBlind {
+    width: 120px;
+    overflow: hidden;
+    float: left;
+}
+
+#prod-pic img{
+    width: 460px; height: 600px;
+    margin-left: 30px;
+}
+#prod-pic {
+    float: left;
+}
+
+.small {
+    height: 150px;
+    margin-bottom: 5px;
+}
+#small-pic img:hover {
+    cursor: pointer;
+}
+
+
+
+.prod-form {
+    /* border: 1px solid blue; */
+    float: left;
+    width: 500px; height: 600px;
+    margin-left: 30px;
+    color: #572c10;
+}
+
+/*제품 기본정보 부분*/
+.prod-info .prod-name {
+    font-family: 'Georgia';
+    font-size: 20px;
+}
+.prod-info .prod-desc {
+    font-size: 12px;
+    margin-top: 25px;
+}
+.prod-info .prod-price {
+    font-family: 'Georgia';
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+/*컬러 옵션*/
+.option-color {
+    margin: 30px 0;
+}
+.option-color li {
+    display: inline;
+    margin-right: 5px;
+}
+
+/*사이즈 옵션*/
+.option-size select{
+    width: 500px;
+    padding: 10px;
+    border-radius: 0;
+}
+
+/*버튼 부분*/
+.btnArea {
+    margin: 50px 0px 60px 0px;   
+}
+.btnArea .btn {
+    border: 1px solid black;
+    padding: 10px 49px;
+    background-color: #572c10;
+    color: white;
+    font-size: 12px;
+}
+.btnArea .btn:hover {
+    background-color: white;
+    color: #572c10;
+}
+.btnArea a:link {
+    text-decoration: none;
+}
+
+
+/*아코디언 부분*/
+.accordion-wrap {
+    box-sizing: border-box;
+}
+
+.ac-title:first-child {
+    border-top: 1px solid #572c10;
+}
+.ac-title {
+    position: relative;
+    padding: 15px 0;
+    cursor: pointer;
+    font-size: 12px;
+    border-bottom: 1px solid #572c10;
+}
+.ac-title>span{
+    /* color: #572c10; */
+}
+
+.ac-content {
+    display: none;
+    overflow: hidden;
+    font-size: 11px;
+    padding: 20px 0;
+    /* color: #572c10; */
+}
+
+.arrow-wrap {
+    position: absolute;
+    top: 50%; right: 10px;
+    transform: translate(0, -50%);
+}
+.ac-title .arrow-top {
+    display: none;
+}
+.ac-title .arrow-bottom {
+    display: block;
+}
+.ac-title.on .arrow-bottom {
+    display: none;
+}
+.ac-title.on .arrow-top {
+    display: block; 
+}
+
+/*사이즈가이드 테이블 부분*/
+.sizechart {
+    margin: 15px 0;
+    border-top: 0.5px solid rgb(181, 183, 184);
+    border-bottom: 0.5px solid rgb(181, 183, 184);
+}
+.sizechart td {
+    padding: 5px 22px;
+    text-align: center;
+}
+.model-size {
+    font-size: 9px;
+}
+
+/*관련상품 부분*/
+.relation {
+    margin-top: 100px;
+}
+.relation > p {
+    font-family: 'Georgia';
+    font-size: 16px;
+    color: #572c10;
+}
+.relation img {
+    width: 250px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+.relation .rel-item li {
+    display: inline-block;
+    margin-right: 45px;
+}
+
+/*관련상품 마우스호버*/
+.rel-item .item{
+    position: relative;
+}
+.rel-item .info{
+    position: absolute; left: 0; bottom: 0;
+    background: rgba(0, 0, 0, 0.2);
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+}
+.rel-item .item:hover .info{
+    opacity: 1;
+    color: aliceblue;
+    text-align: center;
+}
+
+.rel-item .info h3{
+    font-size: 13px;
+    padding-bottom: 0.5em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-transform: uppercase;
+}
+.rel-item .info p {
+    font-size: 11px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }

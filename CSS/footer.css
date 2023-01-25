@@ -1,0 +1,40 @@
+footer {
+    /* border: 1px solid red; */
+    height: 80px;
+}
+#footer_box {
+    /* border: 1px solid green; */
+    width: 900px;
+    height: 50px;
+    margin: 0 auto;
+    font-size: 10px;
+    margin-top: 30px;
+}
+
+#address {
+    /* border: 1px solid red; */
+    float: left;
+    width: 600px;
+    margin: 5px 0px 0px 5px;
+}
+
+#faq_box {
+    /* border: 1px solid red; */
+    width: 40px;
+    float: left;
+    margin: 0px 0px 0px 80px;
+    text-align: center;
+    margin: 5px 0px 0px 80px;
+}
+
+#sns {
+    /* border: 1px solid blue; */
+    width: 130px;
+    float: right;
+    text-align: center;
+    margin: 5px 5px 0px 0px;
+}
+#sns li {
+    display: inline;
+    margin: 0px 5px 0px 5px;
+}

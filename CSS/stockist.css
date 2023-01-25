@@ -1,0 +1,94 @@
+#stockist_box {
+    width: 1000px;
+    height: 700px;
+}
+/*온라인*/
+#stockist_box #online{
+   float: left;
+   margin-left: 150px;
+}
+#stockist_box #online li {
+    margin-bottom: 50px;
+}
+
+/*오프라인*/
+#stockist_box #offline{
+    float: right;
+ }
+#stockist_box img {
+    width: 250px;
+}
+#stockist_box .st_title {
+    color: #572c10;
+    padding: 10px 0px;
+}
+#stockist_box ul a {
+    text-decoration: none;
+    color: #572c10;
+}
+#stockist_box ul a:hover {
+    text-decoration: underline;
+}
+#stockist_box li {
+    margin-top: 20px;
+}
+#offline li {
+    float: left;
+    margin: 5px;
+}
+
+/*마우스 호버*/
+.off_list .item{
+    position: relative;
+}
+.off_list .info{
+    position: absolute; left: 0; bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+}
+.off_list .item:hover .info{
+    opacity: 1;
+    color: aliceblue;
+    cursor: pointer;
+}
+
+.off_list .info h3{
+    font-size: 15px;
+    font-weight: bold;
+    padding-bottom: 0.5em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-transform: uppercase;
+}
+.off_list .info p {
+    font-size: 12px;
+    font-weight: bold;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  /*확대이미지*/
+
+
+#lightbox {
+    position : fixed; 
+    width: 100% ;
+    height: 100% ;
+    background-color: rgba(0,0,0,0.7); 
+    top: 0; left: 0;
+    display: none;
+}
+
+#lightbox img {
+    width: 1000px;
+    position: absolute;   
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 5px solid #eee;
+}

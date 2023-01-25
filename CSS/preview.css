@@ -1,0 +1,62 @@
+body{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+video{
+    width: 1000px;
+    height: auto;
+}
+button{
+    margin: 10px auto;
+    position: relative;
+    top:-12px; left: -50px;
+    color: #572c10;
+    padding: 3px 8px;
+}
+
+#spring {
+    width: 1000px;
+}
+#spring .spring_item {
+    margin-top: 50px;
+}
+#spring .spring_item img {
+    width: 329px;
+}
+.spring_item li {
+    display: inline;
+}
+
+
+/*확대이미지*/
+#spring {
+    width: 1000x;
+    margin: 0 auto;
+}
+#spring ul { 
+    list-style-type: none;
+    margin: 0; padding: 0;
+}
+#spring ul li {
+    display: inline-table;
+}
+
+#lightbox {
+    position : fixed; 
+    width: 100% ;
+    height: 100% ;
+    background-color: rgba(0,0,0,0.7); 
+    top: 0; left: 0;
+    display: none;
+}
+
+#lightbox img {
+    position: absolute;   
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 5px solid #eee;
+}
